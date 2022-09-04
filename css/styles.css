@@ -506,6 +506,10 @@ ul {
     margin-bottom: 20px;
 }
 
+.footer__logo {
+    margin-bottom: 20px;
+}
+
 .logo__accent-white {
     color: var(--primary-white-color);
 }
