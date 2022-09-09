@@ -26,7 +26,8 @@
     <div class="container page-header__container">
       <!-- site-nav -->
       <nav class="nav">
-        <a class="logo link" href="./index.html">Web<span class="logo__accent--black">Studio</span></a>
+        <a class="page-header__logo logo link" href="./index.html">Web<span
+            class="logo__accent--black">Studio</span></a>
 
 
         <ul class="list nav__list">
@@ -459,18 +460,21 @@
         </ul>
       </div>
 
+
       <!-- subscribe -->
       <div class="subscribe">
-        <h3 class="footer__subtitle">Підпишіться на розсилку</h3>
 
         <form class="subscribe-form">
-          <label class="subscribe-form__label">
-            <input class="subscribe-form__input" type="email" name="email" placeholder="E-mail">
+
+
+          <label class="label-footer">
+            <span class="footer__subtitle">Підпишіться на розсилку</span>
+            <input class="label-footer__input" type="email" name="email" placeholder="E-mail" required>
           </label>
 
-          <button class="btn subscribe-form__btn" type="submit">
+          <button class="btn footer-button" type="submit">
             Підписатися
-            <svg class="subscribe-form__icon" width="24" height="24">
+            <svg class="footer-button__icon" width="24" height="24">
               <use href="./images/icons.svg#icon-send"></use>
             </svg>
           </button>
@@ -524,15 +528,17 @@
         </label>
 
 
-        <label class="checkbox-field">
-          <input class="checkbox" type="checkbox" name="policy" value="policy">
-          <span class="checkbox-field__icon"></span>
-          <svg class="checkbox-field__icon-svg" width="16" height="15">
-            <use href="./images/icons.svg#icon-check"></use>
-          </svg>
-          Погоджуюся з розсилкою та приймаю <a class="link checkbox-field__link" href="/" target="_blank"
-            rel="noreffere noopener">Умови договору</a>
-        </label>
+        <div class="checkbox-block">
+          <label class="checkbox-field">
+            <input class="checkbox" type="checkbox" name="policy" value="policy" required>
+            <svg class="checkbox__icon" width="16" height="15">
+              <use href="./images/icons.svg#icon-check"></use>
+            </svg>
+            Погоджуюся з розсилкою та приймаю <a class="link policy" href="/" target="_blank" rel="noreffere noopener">
+              Умови
+              договору</a>
+          </label>
+        </div>
 
         <!-- form btn -->
         <button class="btn form-btn" type="submit">Відправити</button>
