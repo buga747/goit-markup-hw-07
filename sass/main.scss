@@ -1,5 +1,13 @@
 @import './utils/variables';
 @import './utils/visually-hidden';
 @import './base/common';
+@import './base/reset';
+@import './base/section';
 @import './base/container';
+@import './components/hero-title';
+@import './components/section-title';
 @import './components/logo';
+@import './components/btn';
+@import './components/modal';
+@import './layout/page-header';
+@import './layout/hero';
