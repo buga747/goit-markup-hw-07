@@ -12,12 +12,12 @@
         justify-content: center;
         align-items: center;
         border-radius: 50%;
-        transition: background-color $trans-dur $trans-t-funct;
+        @include transition(background-color);
     }
 
     &__icon {
         fill: $icons-color;
-        transition: fill $trans-dur $trans-t-funct;
+        @include transition(fill);
     }
 
     &__link:hover,

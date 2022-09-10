@@ -47,7 +47,7 @@
 .address__email,
 .address__tel {
     color: $white-color-90;
-    transition: color $trans-dur $trans-t-funct;
+    @include transition(color);
 }
 
 .address__email:focus,
@@ -62,8 +62,6 @@
 .join {
     margin-right: 93px;
 }
-
-
 
 .socials-list__link--footer {
     background-color: rgba(255, 255, 255, 0.1);
@@ -117,8 +115,6 @@
 
 }
 
-
-
 .footer-button {
     display: inline-flex;
     align-items: center;
@@ -136,7 +132,7 @@
     background-color: $accent-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: $border-radius;
-    transform: background-color $trans-dur $trans-t-funct;
+    @include transition(background-color);
 
     &__icon {
         fill: currentColor;

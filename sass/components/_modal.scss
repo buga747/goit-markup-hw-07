@@ -8,7 +8,7 @@
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
 
-    transition: opacity $trans-dur $trans-t-funct;
+    @include transition(opacity);
 }
 
 .backdrop.is-hidden {
@@ -36,7 +36,7 @@
     border-radius: 4px;
 
     transform: translate(-50%, -50%) scale(1);
-    transition: transform $trans-dur $trans-t-funct;
+    @include transition(transform);
 
     &__title {
         font-size: 20px;
@@ -63,7 +63,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: color $trans-dur $trans-t-funct;
+    @include transition(color);
 
     &:hover,
     &:focus {
@@ -186,13 +186,13 @@
     border: 2px solid $primary-text-color;
     border-radius: $border-radius;
     margin-right: 7px;
-    transition: background $trans-dur $trans-t-funct, border $trans-dur $trans-t-funct;
+    @include transition-two(background, border);
 }
 
 .checkbox:checked+.checkbox__icon {
     border-color: transparent;
     background-color: $accent-color;
-    ;
+
 }
 
 .policy {
@@ -221,7 +221,8 @@
 
     color: $primary-white-color;
     background-color: $accent-color;
-    transition: background-color $trans-dur $trans-t-funct;
+    @include transition(background-color);
+
 
     &:hover,
     &:focus {

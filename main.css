@@ -384,7 +384,7 @@ ul {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* line 226, D:/Навчання/homework/goit-markup-hw-07/sass/components/_modal.scss */
+/* line 227, D:/Навчання/homework/goit-markup-hw-07/sass/components/_modal.scss */
 .form-btn:hover, .form-btn:focus {
   background-color: #188CE8;
 }
@@ -522,6 +522,147 @@ ul {
   background-color: #188CE8;
 }
 
+/* line 2, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_features.scss */
+.features {
+  padding-bottom: 0;
+}
+
+/* line 6, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_features.scss */
+.feature-set {
+  display: flex;
+  gap: 30px;
+}
+
+/* line 10, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_features.scss */
+.feature-set__item {
+  width: 270px;
+}
+
+/* line 14, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_features.scss */
+.feature-set__icon-block {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  background-color: #F5F4FA;
+}
+
+/* line 25, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_features.scss */
+.feature-set__icon {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/* line 32, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_features.scss */
+.feature-set__subtitle {
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* line 39, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_features.scss */
+.feature-set__description {
+  color: #757575;
+  line-height: 1.71;
+}
+
+/* line 1, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_activity.scss */
+.activity {
+  display: flex;
+  gap: 30px;
+}
+
+/* line 5, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_activity.scss */
+.activity__thumb {
+  position: relative;
+}
+
+/* line 9, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_activity.scss */
+.activity__desc {
+  position: absolute;
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+/* line 1, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_team.scss */
+.team {
+  background-color: #F5F4FA;
+}
+
+/* line 5, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_team.scss */
+.team-member {
+  display: flex;
+  gap: 30px;
+}
+
+/* line 9, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_team.scss */
+.team-member__item {
+  background-color: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* line 16, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_team.scss */
+.team-member__content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* line 21, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_team.scss */
+.team-member__name {
+  font-weight: 500;
+  line-height: 1.17;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* line 29, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_team.scss */
+.team-member__position {
+  color: #757575;
+  line-height: 1.17;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+/* line 1, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_clients.scss */
+.clients-list {
+  display: flex;
+  gap: 30px;
+}
+
+/* line 5, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_clients.scss */
+.clients-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #AFB1B8;
+  border-radius: var(--border-radius);
+  width: 170px;
+  height: 92px;
+  fill: #AFB1B8;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* line 18, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_clients.scss */
+.clients-list__link:hover, .clients-list__link:focus {
+  fill: #2196F3;
+  border-color: #2196F3;
+}
+
 /* line 3, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_page-footer.scss */
 .footer-container {
   display: flex;
@@ -592,29 +733,29 @@ ul {
   margin-right: 93px;
 }
 
-/* line 68, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_page-footer.scss */
+/* line 66, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_page-footer.scss */
 .socials-list__link--footer {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* line 72, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_page-footer.scss */
+/* line 70, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_page-footer.scss */
 .socials-list__icon--footer {
   fill: #FFFFFF;
 }
 
 /* subscribe */
-/* line 79, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_page-footer.scss */
+/* line 77, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_page-footer.scss */
 .subscribe-form {
   display: flex;
   align-items: flex-end;
 }
 
-/* line 84, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_page-footer.scss */
+/* line 82, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_page-footer.scss */
 .label-footer {
   display: block;
 }
 
-/* line 87, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_page-footer.scss */
+/* line 85, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_page-footer.scss */
 .label-footer__input {
   display: inline-block;
   width: 358px;
@@ -632,7 +773,7 @@ ul {
   margin-right: 12px;
 }
 
-/* line 105, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_page-footer.scss */
+/* line 103, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_page-footer.scss */
 .label-footer__input::placeholder {
   font-size: 16px;
   line-height: 1.25;
@@ -640,14 +781,14 @@ ul {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* line 112, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_page-footer.scss */
+/* line 110, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_page-footer.scss */
 .label-footer__input:focus-within {
   outline: 0;
   outline-offset: 0;
   border-color: #2196F3;
 }
 
-/* line 122, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_page-footer.scss */
+/* line 118, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_page-footer.scss */
 .footer-button {
   display: inline-flex;
   align-items: center;
@@ -663,18 +804,122 @@ ul {
   background-color: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  transform: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* line 141, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_page-footer.scss */
+/* line 137, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_page-footer.scss */
 .footer-button__icon {
   fill: currentColor;
   margin-left: 10px;
 }
 
-/* line 146, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_page-footer.scss */
+/* line 142, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_page-footer.scss */
 .footer-button:hover, .footer-button:focus {
   background-color: #188CE8;
+}
+
+/* line 3, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_portfolio.scss */
+.portfolio-filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  gap: 8px;
+}
+
+/* line 10, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_portfolio.scss */
+.portfolio-filter__btn {
+  color: #212121;
+  background-color: #F5F4FA;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  font-size: 16px;
+  padding: 6px 22px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* line 24, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_portfolio.scss */
+.portfolio-filter__btn--active {
+  background-color: #2196F3;
+  color: #FFFFFF;
+}
+
+/* line 29, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_portfolio.scss */
+.portfolio-filter__btn:hover, .portfolio-filter__btn:focus {
+  cursor: pointer;
+  color: #FFFFFF;
+  background-color: #2196F3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* портфоліо */
+/* line 43, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_portfolio.scss */
+.project-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* line 49, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_portfolio.scss */
+.project__link {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* line 52, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_portfolio.scss */
+.project__link:hover, .project__link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+/* line 59, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_portfolio.scss */
+.project__thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 64, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_portfolio.scss */
+.project__overlay-desc {
+  position: absolute;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 63px 24px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  line-height: 1.56;
+  background-color: rgba(33, 150, 243, 0.9);
+  color: #FFFFFF;
+}
+
+/* line 82, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_portfolio.scss */
+.project:hover .project__overlay-desc {
+  transform: translateY(0);
+}
+
+/* line 86, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_portfolio.scss */
+.project__content {
+  border: 1px solid #EEEEEE;
+  background: #FFFFFF;
+  padding: 20px 24px;
+}
+
+/* line 92, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_portfolio.scss */
+.project__name {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+  margin-bottom: 4px;
+}
+
+/* line 100, D:/Навчання/homework/goit-markup-hw-07/sass/layout/_portfolio.scss */
+.project__type {
+  line-height: 1.88;
+  font-size: 16px;
+  color: #757575;
 }
 
 /*# sourceMappingURL=main.css.map */

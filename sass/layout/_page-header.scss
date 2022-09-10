@@ -36,7 +36,7 @@
 .nav__link {
     padding-top: 32px;
     padding-bottom: 32px;
-    transition: color $trans-dur $trans-t-funct;
+    @include transition(color);
 
     &--current {
         position: relative;
@@ -77,7 +77,7 @@
         display: inline-flex;
         align-items: center;
         color: var(--secondary-text-color);
-        transition: color $trans-dur $trans-t-funct;
+        @include transition(color);
     }
 
     &__link:hover,

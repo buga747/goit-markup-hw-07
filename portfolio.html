@@ -16,16 +16,18 @@
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- стилі -->
-  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
 <body>
+  <!--хедер-->
   <!--хедер-->
   <header class="page-header">
     <div class="container page-header__container">
       <!-- site-nav -->
       <nav class="nav">
-        <a class="logo link" href="./index.html">Web<span class="logo__accent--black">Studio</span></a>
+        <a class="page-header__logo logo link" href="./index.html">Web<span
+            class="logo__accent--black">Studio</span></a>
 
 
         <ul class="list nav__list">
@@ -245,34 +247,35 @@
       <div class="join">
         <h3 class="footer__subtitle">Приєднуйтесь</h3>
 
-        <ul class="list join-social">
-          <li class="item join-social__item">
-            <a class="link join-social__link" href="https://www.instagram.com/" target="_blank"
-              rel="noopener noreferrer">
-              <svg class="join-social__icon" width="20" height="20">
+        <ul class="list socials-list">
+          <li class="item socials-list__item ">
+            <a class="link socials-list__link socials-list__link--footer" href="https://www.instagram.com/"
+              target="_blank" rel="noopener noreferrer">
+              <svg class="socials-list__icon socials-list__icon--footer" width="20" height="20">
                 <use href="./images/icons.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
-          <li class="item join-social__item">
-            <a class="link join-social__link" href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
-              <svg class="join-social__icon" width="20" height="20">
+          <li class="item socials-list__item">
+            <a class="link socials-list__link socials-list__link--footer" href="https://www.twitter.com/"
+              target="_blank" rel="noopener noreferrer">
+              <svg class="socials-list__icon socials-list__icon--footer" width="20" height="20">
                 <use href="./images/icons.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
-          <li class="item join-social__item">
-            <a class="link join-social__link" href="https://www.facebook.com/" target="_blank"
-              rel="noopener noreferrer">
-              <svg class="join-social__icon" width="20" height="20">
+          <li class="item socials-list__item">
+            <a class="link socials-list__link socials-list__link--footer" href="https://www.facebook.com/"
+              target="_blank" rel="noopener noreferrer">
+              <svg class="socials-list__icon socials-list__icon--footer" width="20" height="20">
                 <use href="./images/icons.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
-          <li class="item join-social__item">
-            <a class="link join-social__link" href="https://www.linkedin.com/" target="_blank"
-              rel="noopener noreferrer">
-              <svg class="join-social__icon" width="20" height="20">
+          <li class="item socials-list__item">
+            <a class="link socials-list__link socials-list__link--footer" href="https://www.linkedin.com/"
+              target="_blank" rel="noopener noreferrer">
+              <svg class="socials-list__icon socials-list__icon--footer" width="20" height="20">
                 <use href="./images/icons.svg#icon-linkedin"></use>
               </svg>
             </a>
@@ -280,18 +283,21 @@
         </ul>
       </div>
 
+
       <!-- subscribe -->
       <div class="subscribe">
-        <h3 class="footer__subtitle">Підпишіться на розсилку</h3>
 
         <form class="subscribe-form">
-          <label class="subscribe-form__label">
-            <input class="subscribe-form__input" type="email" name="email" placeholder="E-mail">
+
+
+          <label class="label-footer">
+            <span class="footer__subtitle">Підпишіться на розсилку</span>
+            <input class="label-footer__input" type="email" name="email" placeholder="E-mail" required>
           </label>
 
-          <button class="btn subscribe-form__btn" type="submit">
+          <button class="btn footer-button" type="submit">
             Підписатися
-            <svg class="subscribe-form__icon" width="24" height="24">
+            <svg class="footer-button__icon" width="24" height="24">
               <use href="./images/icons.svg#icon-send"></use>
             </svg>
           </button>

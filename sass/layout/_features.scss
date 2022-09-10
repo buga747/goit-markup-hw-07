@@ -1,0 +1,44 @@
+// features
+.features {
+    padding-bottom: 0;
+}
+
+.feature-set {
+    display: flex;
+    gap: 30px;
+
+    &__item {
+        width: 270px;
+    }
+
+    &__icon-block {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 270px;
+        border-radius: 4px;
+        margin-bottom: 30px;
+        background-color: $section-background-color;
+    }
+
+    &__icon {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+
+
+    &__subtitle {
+        line-height: 1.14;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    &__description {
+        color: $secondary-text-color;
+        line-height: 1.71;
+    }
+
+}
