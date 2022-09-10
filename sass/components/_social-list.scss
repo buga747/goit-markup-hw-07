@@ -1,0 +1,33 @@
+/* social-list */
+
+.socials-list {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+    &__link {
+        display: inline-flex;
+        width: 44px;
+        height: 44px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        transition: background-color $trans-dur $trans-t-funct;
+    }
+
+    &__icon {
+        fill: $icons-color;
+        transition: fill $trans-dur $trans-t-funct;
+    }
+
+    &__link:hover,
+    &__link:focus {
+        background-color: $accent-color;
+    }
+
+}
+
+.socials-list__link:hover .socials-list__icon,
+.socials-list__link:focus .socials-list__icon {
+    fill: $primary-white-color;
+}
