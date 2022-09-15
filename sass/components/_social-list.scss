@@ -1,9 +1,12 @@
 /* social-list */
 
-.socials-list {
+.social-group {
     display: flex;
     gap: 10px;
     justify-content: center;
+}
+
+.social-item {
 
     &__link {
         display: inline-flex;
@@ -24,10 +27,18 @@
     &__link:focus {
         background-color: $accent-color;
     }
-
 }
 
-.socials-list__link:hover .socials-list__icon,
-.socials-list__link:focus .socials-list__icon {
+.social-item__link:hover .social-item__icon,
+.social-item__link:focus .social-item__icon {
+    fill: $primary-white-color;
+}
+
+
+.social-item__link--accent-bg {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-item__icon--accent-color {
     fill: $primary-white-color;
 }

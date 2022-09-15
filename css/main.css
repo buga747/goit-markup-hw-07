@@ -113,7 +113,7 @@ ul {
 }
 
 /* social-list */
-.socials-list {
+.social-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,7 +122,8 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.socials-list__link {
+
+.social-item__link {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -138,17 +139,25 @@ ul {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.socials-list__icon {
+.social-item__icon {
   fill: #AFB1B8;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.socials-list__link:hover, .socials-list__link:focus {
+.social-item__link:hover, .social-item__link:focus {
   background-color: #2196F3;
 }
 
-.socials-list__link:hover .socials-list__icon,
-.socials-list__link:focus .socials-list__icon {
+.social-item__link:hover .social-item__icon,
+.social-item__link:focus .social-item__icon {
+  fill: #FFFFFF;
+}
+
+.social-item__link--accent-bg {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-item__icon--accent-color {
   fill: #FFFFFF;
 }
 
@@ -595,11 +604,36 @@ ul {
   background-color: #F5F4FA;
 }
 
-.team-member {
+.team-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
+}
+
+.team-member {
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-member__content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.team-member__name {
+  font-weight: 500;
+  line-height: 1.17;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.team-member__position {
+  color: #757575;
+  line-height: 1.17;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 16px;
 }
 .team-member__item {
   background-color: #FFFFFF;
@@ -717,14 +751,6 @@ ul {
 /* join */
 .join {
   margin-right: 93px;
-}
-
-.socials-list__link--footer {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.socials-list__icon--footer {
-  fill: #FFFFFF;
 }
 
 /* subscribe */
