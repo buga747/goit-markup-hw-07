@@ -6,11 +6,11 @@
     color: $accent-color;
 
 
-    &__accent--black {
+    &__accent--dark {
         color: #000000;
     }
 
-    &__accent-white {
+    &__accent--light {
         color: $primary-white-color;
     }
 }

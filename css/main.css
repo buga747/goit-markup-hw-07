@@ -96,10 +96,10 @@ ul {
   line-height: 1.19;
   color: #2196F3;
 }
-.logo__accent--black {
+.logo__accent--dark {
   color: #000000;
 }
-.logo__accent-white {
+.logo__accent--light {
   color: #FFFFFF;
 }
 
