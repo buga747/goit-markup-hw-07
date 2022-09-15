@@ -339,9 +339,9 @@ ul {
 }
 
 .checkbox-field {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -376,7 +376,9 @@ ul {
 }
 
 .policy {
-  margin-left: 3px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #2196F3;

@@ -167,7 +167,7 @@
 }
 
 .checkbox-field {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -202,7 +202,7 @@
 }
 
 .policy {
-    margin-left: 3px;
+    display: inline-flex;
     text-decoration-line: underline;
     color: #2196F3;
 }
