@@ -8,8 +8,6 @@
     }
 }
 
-
-
 /* logo */
 
 .page-header__logo {
@@ -25,15 +23,15 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-align: left;
-
-    &__list {
-        display: flex;
-        letter-spacing: 0.02em;
-        gap: 50px;
-    }
 }
 
-.nav__link {
+.menu {
+    display: flex;
+    letter-spacing: 0.02em;
+    gap: 50px;
+}
+
+.menu__link {
     padding-top: 32px;
     padding-bottom: 32px;
     @include transition(color);

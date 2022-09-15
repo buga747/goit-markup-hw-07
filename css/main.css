@@ -180,7 +180,6 @@ ul {
   top: 50%;
   display: inline-block;
   width: 528px;
-  height: 581px;
   padding: 40px;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -233,7 +232,7 @@ ul {
   display: block;
   margin-bottom: 10px;
 }
-.modal-field:last-child {
+.modal-field:last-of-type {
   margin-bottom: 20px;
 }
 .modal-field__name {
@@ -362,6 +361,11 @@ ul {
   background-color: #2196F3;
 }
 
+.checkbox:focus + .checkbox__icon {
+  outline: 2px solid black;
+  outline-offset: 2px solid black;
+}
+
 .policy {
   margin-left: 3px;
   -webkit-text-decoration-line: underline;
@@ -419,7 +423,8 @@ ul {
   letter-spacing: 0.02em;
   text-align: left;
 }
-.nav__list {
+
+.menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -427,17 +432,17 @@ ul {
   gap: 50px;
 }
 
-.nav__link {
+.menu__link {
   padding-top: 32px;
   padding-bottom: 32px;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav__link--current {
+.menu__link--current {
   position: relative;
   color: #2196F3;
 }
-.nav__link--current::after {
+.menu__link--current::after {
   content: "";
   position: absolute;
   left: 0;
@@ -447,7 +452,7 @@ ul {
   border-radius: 2px;
   background-color: #2196F3;
 }
-.nav__link:hover, .nav__link:focus {
+.menu__link:hover, .menu__link:focus {
   color: #2196F3;
 }
 

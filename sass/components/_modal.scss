@@ -28,7 +28,7 @@
 
     display: inline-block;
     width: 528px;
-    height: 581px;
+    // height: 581px;
     padding: 40px;
 
     background: $primary-white-color;
@@ -79,7 +79,7 @@
     display: block;
     margin-bottom: 10px;
 
-    &:last-child {
+    &:last-of-type {
         margin-bottom: 20px;
     }
 
@@ -180,6 +180,8 @@
 
 }
 
+
+
 .checkbox__icon {
     width: 16px;
     height: 15px;
@@ -192,7 +194,11 @@
 .checkbox:checked+.checkbox__icon {
     border-color: transparent;
     background-color: $accent-color;
+}
 
+.checkbox:focus+.checkbox__icon {
+    outline: 2px solid black;
+    outline-offset: 2px solid black;
 }
 
 .policy {
