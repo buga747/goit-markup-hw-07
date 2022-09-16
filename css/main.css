@@ -372,7 +372,7 @@ ul {
 
 .checkbox:focus + .checkbox__icon {
   outline: 2px solid black;
-  outline-offset: 2px solid black;
+  outline-offset: 2px;
 }
 
 .policy {
@@ -578,7 +578,7 @@ ul {
   line-height: 1.71;
 }
 
-.activity {
+.activity__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

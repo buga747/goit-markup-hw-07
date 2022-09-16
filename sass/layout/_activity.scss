@@ -1,6 +1,9 @@
 .activity {
-    display: flex;
-    gap: 30px;
+
+    &__list {
+        display: flex;
+        gap: 30px;
+    }
 
     &__thumb {
         position: relative;
